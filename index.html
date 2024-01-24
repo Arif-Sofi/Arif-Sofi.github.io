@@ -43,7 +43,16 @@
 					<section id="banner" class="major">
 						<div class="inner">
 							<header class="major">
-								<h1>Arif Sofi</h1>
+								<div class="container">
+									<div class="row">
+										<div class="col align-bottom">
+											<h1>Arif Sofi</h1>
+										</div>
+										<div class="col">
+											<img src="profile.jpg" class="img-circle">
+										</div>
+									</div>
+								</div>
 							</header>
 							<div class="content">
 								<span class="image">
@@ -82,7 +91,7 @@
 										<img src="asg1.png" alt="Assignment 1 picture" />
 									</span>
 									<header class="major">
-										<h3><a href="ClarityTechwork.pdf" class="link">Assignment 1</a></h3>
+										<h3><a href="ClarityTechwork.pdf" target = "_blank" class="link">Assignment 1</a></h3>
 										<p>Poster</p>
 									</header>
 								</article>
@@ -228,3 +237,39 @@
 
 	</body>
 </html>
+
+<style>
+	.container {
+		width: 100%;
+		padding-right: 15px;
+		padding-left: 15px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	
+	.row {
+		display: flex;
+		flex-wrap: wrap;
+		margin-right: -15px;
+		margin-left: -15px;
+		justify-content: flex-start; /* Aligns children (cols) to the start (left) */
+	}
+	
+	.col {
+		flex: 0 0 auto; /* Only take up as much space as needed */
+		padding: 15px;
+		display: flex; /* Use flexbox to make it easier to align items */
+		flex-direction: column; /* Stack children vertically */
+	}
+	
+	.align-bottom {
+		align-self: flex-end; /* Aligns the content to the bottom */
+		margin-top: auto; /* Pushes the content to the bottom */
+	}
+	
+	.img-circle {
+		border-radius: 50%; /* Makes the image circular */
+		max-width: 100%; /* Makes sure the image is responsive */
+		height: auto;
+	}	
+</style>
